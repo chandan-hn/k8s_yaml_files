@@ -11,12 +11,12 @@ spec:
     metadata:
       labels:
         app: pods
-    spec: 
+    spec:
       tolerations:
-	    -key: upgrade
-		value: prod
-		effect: NoSchedule
-		operator: Equal
+        - key: upgrade
+          value: prod
+          effect: NoSchedule
+          operator: Equal
       containers:
         - name: container1
           image: nginx
