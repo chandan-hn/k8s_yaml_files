@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: StatefulSet    
+metadata:
+  name: ip-stateful-app
+  namespace: custom-ns
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: pods
+
+  template:
+    metadata:
+      labels:
+        app: pods
+    spec:
+      containers:
+        - name: container1
+          image: harshajain/ip_app:2
+          ports:
+            - containerPort: 8080
