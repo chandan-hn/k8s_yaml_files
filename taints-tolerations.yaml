@@ -13,8 +13,8 @@ spec:
         app: pods
     spec: 
       tolerations:
-	    -key: evn
-		value: upgrade
+	    -key: upgrade
+		value: prod
 		effect: NoSchedule
 		operator: Equal
       containers:
