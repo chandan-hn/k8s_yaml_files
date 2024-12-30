@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metdata:
-  - name: chn-deployment
+  name: chn-deployment
 spec:
   replicas: 3
   selector:
