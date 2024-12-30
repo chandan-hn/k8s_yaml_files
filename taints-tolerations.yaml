@@ -14,7 +14,7 @@ spec:
     spec: 
       tolerations:
 	    -key: evn
-		value: prod
+		value: upgrade
 		effect: NoSchedule
 		operator: Equal
       containers:
