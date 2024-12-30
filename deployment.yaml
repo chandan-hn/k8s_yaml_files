@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metdata:
+  - name: chn-deployment
+spec:
+  replicas: 3
+  selector:
+    matchlabels:
+      app: nginx
+template:
+  metadata:
+    labels:
+      app: nginx
+  spec:
+    containers:
+      - name: container-1
+        image: nginx:1.14.2
+        ports:
+          - containerPort: 80
