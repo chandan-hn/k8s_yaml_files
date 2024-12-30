@@ -12,8 +12,8 @@ spec:
       labels:
         app: pods
     spec:
-	  nodeSelector:                     
-	    env: prod                           
+      nodeSelector:                     
+        env: prod                           
       containers:
         - name: container1
           image: nginx
