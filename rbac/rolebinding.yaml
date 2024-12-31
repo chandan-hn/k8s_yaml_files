@@ -1,8 +1,8 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
-  name: sa-role-binding-demo
-  namespace: default
+  name: role-binding-demo
+  namespace: test
 subjects:														
   - kind: ServiceAccount
     name: my-sa										
