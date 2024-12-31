@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: my-sa-admin-cluster-role								
+subjects:														
+  - kind: ServiceAccount
+    name: sa-role-binding-demo
+    namespace: test	
+roleRef: 
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
