@@ -5,7 +5,7 @@ metadata:
   namespace: test
 subjects:														
   - kind: ServiceAccount
-    name: my-sa										
+    name: sa-role-binding-demo										
 roleRef: 
   kind: Role
-  name: my-role
+  name: role-demo
