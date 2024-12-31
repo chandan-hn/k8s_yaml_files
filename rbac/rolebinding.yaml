@@ -7,5 +7,5 @@ subjects:
   - kind: ServiceAccount
     name: sa-role-binding-demo										
 roleRef: 
-  kind: Role
-  name: role-demo
+  - kind: Role
+    name: role-demo
